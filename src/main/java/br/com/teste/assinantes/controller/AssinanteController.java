@@ -63,9 +63,16 @@ public class AssinanteController {
 	}
 	
 	@GetMapping(path = "/login")
-	public boolean getLogin(String email, String senha) {
-		int id = assinanteRepository.findByEmailAndSenha(email, senha);
-		return id == -1 ? false : true;
+	public String getLogin(String email, String senha) {
+		int id = -1;
+		try {
+			id = assinanteRepository.findByEmailAndSenha(email, senha);
+		} catch (Exception e) {
+			return "Cadastro não encontrado";
+		}
+		
+		Optional<Assinante> assinante = Optional.ofNullable(assinanteRepository.findById(id));
+		return "Bem-vindo(a) " + assinante.get().getNome();
 	}
 	
 	@GetMapping(path = "/listaEmails")
