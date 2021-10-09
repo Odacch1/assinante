@@ -26,9 +26,15 @@ E foi feito um método GET para retornar apenas o e-mails que estão com a assin
 Para ter essa lista, pode-se usar o link: "http://localhost:8080/assinante/listaEmails"
 
 Para esse teste, me foram feitas algumas perguntas, são elas:
+
 Em caso de um assinante cancelado, ele pode voltar a ser assinante e como podemos tratar suas informações?
+
 R: foi utilizado um campo cancelado, onde se o cliente decidir por cancelar a assinatura, o campo é modificado no banco.
+
 Como vamos garantir a autenticidade do e-mail informado?
+
 R: Pode-se utilizar a verificação de e-mail, é mandado um link para verificação no e-mail da pessoa, e ao clicar, é ativado o cadastro. (não implementado)
+
 Como proteger e evitar que o cancelamento de um e-mail seja feito por outra pessoa?
+
 R: Para isso foi utilizado a senha do cliente, porém não foi utilizado nenhuma encriptação para protegimento dos dados, pois como é um projeto pessoal, resolvi deixar apenas salvando no banco.
