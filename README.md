@@ -3,7 +3,7 @@ Aplicação Back-end feita em Spring, utilizando Java 11.
 
 A aplicação consiste em um cadastro de assinantes para envio de e-mails.
 
-Foram feitos os métodos GET, POST e PUT. Para utilizar a aplicação é necessário uma ferramenta para conseguir utilizar esse métodos, como o Postman, um banco de dados em MySQL, utilizando a porta 3306 e ter o usuário root e senha 12345678. Caso for utilizar outro banco, pode ser modificado o arquivo application.properties em resources.
+Foram feitos os métodos GET, POST e PUT. Para utilizar a aplicação é necessário uma ferramenta para conseguir utilizar esse métodos, como o Postman, um banco de dados em MySQL, utilizando a porta 3306 e ter o usuário root e senha 12345678, sendo o nome do banco springboot. Caso for utilizar outro banco, pode ser modificado o arquivo application.properties em resources.
 
 A primeira tela é uma tela inicial com uma mensagem, ela pode ser acessada pelo link "http://localhost:8080/assinante".
 
